@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>For You ❤️</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- background music -->
+<audio id="bgMusic" src="music.mp3" loop></audio>
+
+<div class="phone scrapbook">
+
+    <div class="header">
+        💌 Chat with Me
+        <span id="musicBtn">🔊</span>
+    </div>
+
+    <div class="chat-area" id="chatArea"></div>
+
+    <div class="reply-box" id="replyBox">
+        <button onclick="goReply()">Reply me ❤️</button>
+    </div>
+
+</div>
+
+
+<!-- scrapbook photo popup -->
+<div class="popup" id="popup">
+    <div class="card">
+        <img src="memory.jpg">
+        <p>One of my favourite memories with you ❤️</p>
+        <button onclick="closePopup()">Close</button>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+      </html>
+      
