@@ -153,3 +153,29 @@ body{
     cursor:pointer;
   }
   
+/* floating doodles */
+
+.doodle-layer{
+    position:absolute;
+    inset:0;
+    pointer-events:none;
+    overflow:hidden;
+    z-index:0;
+}
+
+.doodle{
+    position:absolute;
+    font-size:18px;
+    opacity:0.25;
+    animation: floatDoodle linear infinite;
+}
+
+@keyframes floatDoodle{
+    from{
+        transform:translateY(100vh) rotate(0deg);
+    }
+    to{
+        transform:translateY(-10vh) rotate(360deg);
+    }
+    }
+    
